@@ -6,4 +6,8 @@
 
 @section('seccion')
     <h3>Lista</h3>
+    @foreach($xAlumnos as $item)
+        <p> {{ $item->id}} {{ $item->nomEst }} </p>
+    @endforeach
+
 @endsection

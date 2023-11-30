@@ -5,5 +5,5 @@
 @endsection
 
 @section('seccion')
-    <h3>Este es el codigo de la foto</h3>
+    <h3>Esta es la Galeria. {{$valor}}... {{$otro}}</h3>
 @endsection
