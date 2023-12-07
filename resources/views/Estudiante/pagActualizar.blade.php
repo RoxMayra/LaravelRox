@@ -11,7 +11,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="alert" arial-label="close"></button>
         </div>
     @endif
-    <form action="{{ route('Estudiante.xRegistrar') }}" method="post" class="d-grid gap-2">
+    <form action="{{ route('Estudiante.xRegistrar') }}" method="post" class="d-grid gap-2">...
         @csrf
         @error('codEst')
             <div class="alert alert-danger">
@@ -25,37 +25,16 @@
 
         @enderror
         @if($errors ->has('apeEst'))
-        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <div class="alert alert-warning alert-dismissible fade show" role="alert"
             El <strong>apellido</strong> es requerido
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            <button type="button" class="btn-close" data-bs-dismiss-"alert" aria-label="Close"></button>
         </div>
-        @error('fnaEst')
-            <div class="alert alert-danger">
-                Agregar fecha de nacimiento
-            </div>
-        @enderror
-        @error('turMat')
-            <div class="alert alert-danger">
-                Agregar Turno
-            </div>
-        @enderror
-        @error('semMat')
-            <div class="alert alert-danger">
-                Agregar semestre
-            </div>
-        @enderror
-        @error('estMat')
-            <div class="alert alert-danger">
-                Agregar estado de matricula
-            </div>
-        @enderror
 
         @endif
 
         <input type="text" name="codEst" placeholder="Código" value="{{ old('codEst') }}" class="form-control mb-2">
         <input type="text" name="nomEst" placeholder="Nombres" value="{{ old('nomEst') }}" class="form-control mb-2">
-        <input type="text" name="apeEst" placeholder="Apellidos" value="{{ old('apeEst') }}" class="form-control mb-2"> 
-        <input type="date" name="fnaEst" placeholder="Fecha de nacimiento" value="{{ old('fnaEst') }}" class="form-control mb-2">
+        <input type="text" name="apeEst" placeholder="Apellidos" value="{{ old('apeEst') }}" class="form-control mb-2"> <input type="date" name="fnaEst" placeholder="Fecha de nacimiento" value="{{ old('fnaEst') }}" class="form-control mb-2">
         <select name="turMat" class="form-control mb-2">
             <option value="">Seleccione...</option> 
             <option value="1">Turno día</option>
