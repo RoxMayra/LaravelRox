@@ -60,11 +60,12 @@
     </select>
     <select name="ofiAct" class="form-control mb-2">
       <option value="">Seleccione. ¿oficio actual?</option>
-      <option value="Contabilidad">Contabilidad</option>
-      <option value="Administración">Administración</option>
-      <option value="Mecanica automotriz">Mecanica automotriz</option>
-      <option value="Enfermeria">Enfermeria</option>
       <option value="Computación e informatica">Computación e informatica</option>
+      <option value="Contabilidad">Contabilidad</option>
+      <option value="Administración de Redes">Administración de Redes</option>
+      <option value="Metalurgia">Metalurgia</option>
+      <option value="Electronica">Electronica</option>
+      
     </select>
     <select name="satEst" class="form-control mb-2">
       <option value="">Seleccione satisfacción</option>
